@@ -1,0 +1,4 @@
+BasedOnStyle: WebKit
+TabWidth: 4
+UseTab: Never
+IndentWidth: 4
