@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.0.0)
+project(tunit VERSION 0.1.0)
+
+include(CTest)
+enable_testing()
+add_definitions("-Wall -std=c++14 -DTUNIT_DEBUG")
+include_directories(inc)
+add_executable(tunit main.cpp)
+set(CPACK_PROJECT_NAME ${PROJECT_NAME})
+set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
+include(CPack)
